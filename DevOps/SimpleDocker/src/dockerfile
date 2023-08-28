@@ -1,0 +1,9 @@
+FROM nginx
+WORKDIR /server
+COPY ./server/hello_world.c hello_world.c
+COPY ./server/nginx/nginx.conf /etc/nginx/nginx.conf
+COPY ./server/script.sh script.sh
+RUN useradd -ms /bin/bash newuser && usermod -G root newuser && apt-get update && apt install spawn-fcgi && apt install gcc -y && apt-get install libfcgi-dev -y && chmod 777 script.sh && rm -rf /var/lib/apt/lists
+USER newuser
+USER 0
+CMD ./script.sh && sleep infinity

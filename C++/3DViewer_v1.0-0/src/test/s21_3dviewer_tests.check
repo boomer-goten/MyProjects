@@ -1,0 +1,288 @@
+#include "../s21_3DViewer.h"
+
+#define EPS 1e-5
+
+#test parser_1
+data_vertex v;
+data_facet f;
+char name[] = "allo.obj";
+int res = 1;
+
+int my_res = parsing_obj_file(&v, &f, name);
+
+ck_assert_int_eq(res, my_res);
+
+if (f.facets != NULL) {
+  free(f.facets);
+}
+s21_remove_matrix(&v);
+
+#test parser_2
+data_vertex v;
+data_facet f;
+char name[] = "test/test1.obj";
+int res = 0;
+int count_facets = 0, count_vert_in_fac = 0;
+
+int my_res = parsing_obj_file(&v, &f, name);
+
+ck_assert_int_eq(res, my_res);
+ck_assert_int_eq(count_facets, f.count_f);
+ck_assert_int_eq(count_vert_in_fac, f.count_v_in_f);
+
+if (f.facets != NULL) {
+  free(f.facets);
+}
+s21_remove_matrix(&v);
+
+#test parser_3
+data_vertex v;
+data_facet f;
+char name[] = "test/test.obj";
+int res = 0;
+int count_vertex = 7, count_facets = 13, count_vert_in_fac = 36;
+
+int my_res = parsing_obj_file(&v, &f, name);
+
+ck_assert_int_eq(res, my_res);
+ck_assert_int_eq(count_vertex, v.count_v);
+ck_assert_int_eq(count_facets, f.count_f);
+ck_assert_int_eq(count_vert_in_fac, f.count_v_in_f);
+
+float correct_matrix_v[7][3] = {{2.0, 12.2, 0.0}, {0.0, 0.0, 1.0}, {7.0, 1.11, 0.23}, {0.0, 1.0, 1.0},
+                                {2.1, 0.0, 0.0},  {1.0, 1.0, 2.2}, {1.0, 1.0, 1.0}};
+unsigned correct_matrix_f[36] = {0, 6, 6, 4, 4, 0, 0, 2, 2, 0, 2, 6, 6, 2, 0, 3, 3, 2,
+                                 2, 0, 0, 1, 1, 0, 1, 3, 3, 1, 4, 6, 6, 7, 7, 4, 5, 5};
+
+for (int i = 0; i < v.count_v; i++) {
+  for (int j = 0; j < 3; j++) {
+    ck_assert_float_eq_tol(correct_matrix_v[i][j], v.matrix_vertex[i][j], 1e-7);
+  }
+}
+
+for (int i = 0; i < f.count_v_in_f; i++) {
+  ck_assert_int_eq(correct_matrix_f[i], f.facets[i]);
+}
+
+if (f.facets != NULL) {
+  free(f.facets);
+}
+s21_remove_matrix(&v);
+
+#test move_1
+data_vertex v;
+int rows = 3;
+int status = 0;
+s21_create_matrix(rows, 3, &v);
+for (int i = 0; i < v.count_v; i++) {
+  v.matrix_vertex[i][0] = 1;
+  v.matrix_vertex[i][1] = 1;
+  v.matrix_vertex[i][2] = 1;
+}
+status = matrix_of_move(1, 1, 3, &v);
+for (int i = 0; i < v.count_v; i++) {
+  if (v.matrix_vertex[i][0] != 2 || v.matrix_vertex[i][1] != 2 || v.matrix_vertex[i][2] != 4) {
+    status = 1;
+  }
+}
+s21_remove_matrix(&v);
+;
+ck_assert_int_eq(0, status);
+
+#test move_2
+data_vertex v;
+int rows = 3;
+int status = 0;
+s21_create_matrix(rows, 3, &v);
+for (int i = 0; i < v.count_v; i++) {
+  v.matrix_vertex[i][0] = 1;
+  v.matrix_vertex[i][1] = 1;
+  v.matrix_vertex[i][2] = 1;
+}
+status = matrix_of_move(-2, -2, 6, &v);
+for (int i = 0; i < v.count_v; i++) {
+  if (v.matrix_vertex[i][0] != -1 || v.matrix_vertex[i][1] != -1 || v.matrix_vertex[i][2] != 7) {
+    status = 1;
+  }
+}
+s21_remove_matrix(&v);
+ck_assert_int_eq(0, status);
+
+#test move_3
+data_vertex v = {0};
+int status = matrix_of_move(-2, -2, 6, &v);
+ck_assert_int_eq(1, status);
+
+#test scale_1
+data_vertex v;
+int rows = 3;
+int status = 0;
+s21_create_matrix(rows, 3, &v);
+for (int i = 0; i < v.count_v; i++) {
+  v.matrix_vertex[i][0] = 1;
+  v.matrix_vertex[i][1] = 1;
+  v.matrix_vertex[i][2] = 1;
+}
+status = matrix_of_scale(3, &v);
+for (int i = 0; i < v.count_v; i++) {
+  if (v.matrix_vertex[i][0] != 3 || v.matrix_vertex[i][1] != 3 || v.matrix_vertex[i][2] != 3) {
+    status = 1;
+  }
+}
+s21_remove_matrix(&v);
+ck_assert_int_eq(0, status);
+
+#test scale_2
+data_vertex v;
+int rows = 3;
+int status = 0;
+s21_create_matrix(rows, 3, &v);
+for (int i = 0; i < v.count_v; i++) {
+  v.matrix_vertex[i][0] = 1;
+  v.matrix_vertex[i][1] = 1;
+  v.matrix_vertex[i][2] = 1;
+}
+status = matrix_of_scale(-2, &v);
+s21_remove_matrix(&v);
+ck_assert_int_eq(2, status);
+
+#test scale_3
+data_vertex v = {0};
+int status = matrix_of_scale(2, &v);
+ck_assert_int_eq(1, status);
+
+#test turn_1
+data_vertex v;
+int rows = 3;
+int status = 0;
+s21_create_matrix(rows, 3, &v);
+for (int i = 0; i < v.count_v; i++) {
+  v.matrix_vertex[i][0] = 1;
+  v.matrix_vertex[i][1] = 1;
+  v.matrix_vertex[i][2] = 1;
+}
+status = matrix_of_turn(30, 0, 0, &v);
+s21_remove_matrix(&v);
+ck_assert_int_eq(0, status);
+
+#test turn_2
+data_vertex v;
+int rows = 3;
+int status = 0;
+s21_create_matrix(rows, 3, &v);
+for (int i = 0; i < v.count_v; i++) {
+  v.matrix_vertex[i][0] = 1;
+  v.matrix_vertex[i][1] = 1;
+  v.matrix_vertex[i][2] = 1;
+}
+status = matrix_of_turn(0, 30, 0, &v);
+s21_remove_matrix(&v);
+ck_assert_int_eq(0, status);
+
+#test turn_3
+data_vertex v;
+int rows = 3;
+int status = 0;
+s21_create_matrix(rows, 3, &v);
+for (int i = 0; i < v.count_v; i++) {
+  v.matrix_vertex[i][0] = 1;
+  v.matrix_vertex[i][1] = 1;
+  v.matrix_vertex[i][2] = 1;
+}
+status = matrix_of_turn(0, 0, 30, &v);
+s21_remove_matrix(&v);
+ck_assert_int_eq(0, status);
+
+#test turn_4
+data_vertex v;
+int rows = 3;
+int status = 0;
+s21_create_matrix(rows, 3, &v);
+for (int i = 0; i < v.count_v; i++) {
+  v.matrix_vertex[i][0] = 1;
+  v.matrix_vertex[i][1] = 1;
+  v.matrix_vertex[i][2] = 1;
+}
+status = matrix_of_turn(0, 30, 30, &v);
+s21_remove_matrix(&v);
+ck_assert_int_eq(0, status);
+
+#test turn_5
+data_vertex v;
+int rows = 3;
+int status = 0;
+s21_create_matrix(rows, 3, &v);
+for (int i = 0; i < v.count_v; i++) {
+  v.matrix_vertex[i][0] = 1;
+  v.matrix_vertex[i][1] = 1;
+  v.matrix_vertex[i][2] = 1;
+}
+status = matrix_of_turn(30, 0, 30, &v);
+s21_remove_matrix(&v);
+ck_assert_int_eq(0, status);
+
+#test turn_6
+data_vertex v;
+int rows = 3;
+int status = 0;
+s21_create_matrix(rows, 3, &v);
+for (int i = 0; i < v.count_v; i++) {
+  v.matrix_vertex[i][0] = 1;
+  v.matrix_vertex[i][1] = 1;
+  v.matrix_vertex[i][2] = 1;
+}
+status = matrix_of_turn(30, 30, 0, &v);
+s21_remove_matrix(&v);
+ck_assert_int_eq(0, status);
+
+#test turn_7
+data_vertex v = {0};
+int status = matrix_of_turn(0, 30, 0, &v);
+ck_assert_int_eq(1, status);
+
+#test find_min_max_1
+data_vertex v = {0};
+data_facet f = {0};
+float min_X = -1., max_X = 1., min_Y = -1., max_Y = 1., min_Z = -1.1, max_Z = 0.1;
+float min_X_test = 0., max_X_test = 0., min_Y_test = 0., max_Y_test = 0, min_Z_test = 0., max_Z_test = 0.;
+char name[] = "test/test2.obj";
+int res = 0;
+int my_res = parsing_obj_file(&v, &f, name);
+ck_assert_int_eq(res, my_res);
+find_min_max(&v, &min_X_test, &max_X_test, &min_Y_test, &max_Y_test, &min_Z_test, &max_Z_test);
+ck_assert_float_eq_tol(min_X_test, min_X, EPS);
+ck_assert_float_eq_tol(max_X_test, max_X, EPS);
+ck_assert_float_eq_tol(min_Y_test, min_Y, EPS);
+ck_assert_float_eq_tol(max_Y_test, max_Y, EPS);
+ck_assert_float_eq_tol(min_Z_test, min_Z, EPS);
+ck_assert_float_eq_tol(max_Z_test, max_Z, EPS);
+s21_remove_matrix(&v);
+free(f.facets);
+
+#test find_normalization_1
+data_vertex v = {0};
+data_facet f = {0};
+data_vertex v_test = {0};
+data_facet f_test = {0};
+// float min_X_test = 0., max_X_test =0.,  min_Y_test = 0., max_Y_test = 0,
+// min_Z_test = 0., max_Z_test = 0.;
+char name_test[] = "test/test3.obj";
+char name[] = "test/test4.obj";
+int res = 0;
+int my_res_test = parsing_obj_file(&v_test, &f_test, name_test);
+int my_res = parsing_obj_file(&v, &f, name);
+ck_assert_int_eq(res, my_res);
+ck_assert_int_eq(res, my_res_test);
+normalize(&v_test);
+// for (int i = 0; i < v.count_v; ++i) {
+//   for (int j = 0; j < 3; ++j) printf("%f ", v_test.matrix_vertex[i][j]);
+//   printf("\n");
+// }
+
+for (int i = 0; i < v.count_v; ++i) {
+  for (int j = 0; j < 3; ++j) ck_assert_float_eq_tol(v_test.matrix_vertex[i][j], v.matrix_vertex[i][j], EPS);
+}
+s21_remove_matrix(&v);
+free(f.facets);
+s21_remove_matrix(&v_test);
+free(f_test.facets);

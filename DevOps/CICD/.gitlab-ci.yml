@@ -1,0 +1,74 @@
+stages:
+  - build
+  - codestyle
+  - tests
+  - telegram_ci
+  - deploy
+  - telegram_ci_cd
+
+
+build:
+  stage: build
+  tags: 
+    - DO6_CICD
+  script:
+    - cd src/cat
+    - make s21_cat
+    - make s21_grep
+  artifacts:
+    paths:
+      - ./src/cat/s21_cat
+      - ./src/grep/s21_grep
+    expire_in: 30 days
+
+codestyle:
+  stage: codestyle
+  tags:
+    - DO6_CICD
+  script:
+    - cp materials/linters/.clang-format src/.clang-format
+    - clang-format -n --Werror --ferror-limit=1 src/cat/*.[ch]
+    - clang-format -n --Werror --ferror-limit=1 src/grep/*.[ch]
+  when: on_success
+
+tests:
+  stage: tests
+  tags:
+    - DO6_CICD
+  script:
+    - cd ./src/cat
+    - ./own_test.sh
+    - cd ../grep
+    - ./grep.sh
+  when: on_success
+
+telegram_ci:
+  stage: telegram_ci
+  tags:
+    - DO6_CICD
+  script:
+    - ./src/message_to_telegram.sh FAIL FAIL
+  when: on_failure
+
+deploy:
+  stage: deploy
+  tags:
+    - DO6_CICD
+  script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - cat ~/.ssh/id_rsa | ssh-add -
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > /home/gitlab-runner/.ssh/config
+    - scp ./src/cat/s21_cat root@192.168.0.16:/usr/local/bin
+    - scp ./src/grep/s21_grep root@192.168.0.16:/usr/local/bin
+    - ./src/message_to_telegram.sh SUCCESS SUCCESS
+  when: on_success
+
+telegram_ci_cd:
+  stage: telegram_ci_cd
+  needs: [tests]
+  tags:
+    - DO6_CICD
+  script:
+    - ./src/message_to_telegram.sh SUCCESS FAIL
+  when: on_failure

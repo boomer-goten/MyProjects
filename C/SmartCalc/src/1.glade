@@ -1,0 +1,2407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkTextBuffer" id="buffer_date_begin">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_dolg_credit">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_input"/>
+  <object class="GtkTextBuffer" id="buffer_mashtab">
+    <property name="text" translatable="yes">1:1</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_month_credit">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_nachisl_proc_deposit">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_nalog_deposit">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_output">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_pereplata_credit">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_popol_mes">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_proc_deposit">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_procent_credit">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_snyatiya_mes">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_snyatiya_sum">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_srok_credit">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_srok_deposit">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_sum_credit">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_sum_deposit">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_sum_nalog_deposit">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_sum_popol">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_sum_result_deposit">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkTextBuffer" id="buffer_x">
+    <property name="text" translatable="yes">0</property>
+  </object>
+  <object class="GtkListStore" id="liststore1">
+    <columns>
+      <!-- column-name Разовое -->
+      <column type="gchar"/>
+      <!-- column-name Раз -->
+      <column type="gchar"/>
+      <!-- column-name Раз1 -->
+      <column type="gchar"/>
+      <!-- column-name Раз2 -->
+      <column type="gchar"/>
+      <!-- column-name Раз3 -->
+      <column type="gchar"/>
+      <!-- column-name Раз4 -->
+      <column type="gchar"/>
+    </columns>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer1">
+    <property name="text" translatable="yes">x =</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer10">
+    <property name="text" translatable="yes">Процентная ставка(%)</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer11">
+    <property name="text" translatable="yes">Капитализация процентов</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer12">
+    <property name="text" translatable="yes">Периодичность выплат             </property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer13">
+    <property name="text" translatable="yes">Налоговая ставка(%)</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer14">
+    <property name="text" translatable="yes">Срок размещения(мес.)</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer15">
+    <property name="text" translatable="yes">Список пополнений</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer16">
+    <property name="text" translatable="yes">Частичные снятия</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer17">
+    <property name="text" translatable="yes">Начисленные проценты</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer18">
+    <property name="text" translatable="yes">Сумма налога</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer19">
+    <property name="text" translatable="yes">Сумма вклада к концу срока  </property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer2">
+    <property name="text" translatable="yes">Сумма кредита</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer20">
+    <property name="text" translatable="yes">Начало срока</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer21">
+    <property name="text" translatable="yes">Масштаб</property>
+  </object>
+  <object class="GtkWindow" id="Main_Window">
+    <property name="name">Калькулятор</property>
+    <property name="can-focus">False</property>
+    <property name="halign">center</property>
+    <property name="title" translatable="yes">Калькулятор</property>
+    <property name="resizable">False</property>
+    <property name="window-position">mouse</property>
+    <property name="default-width">550</property>
+    <property name="default-height">375</property>
+    <child>
+      <!-- n-columns=1 n-rows=2 -->
+      <object class="GtkGrid" id="All_grids">
+        <property name="name">All</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="margin-left">20</property>
+        <property name="margin-right">20</property>
+        <property name="margin-start">20</property>
+        <property name="margin-end">20</property>
+        <property name="margin-top">10</property>
+        <property name="margin-bottom">10</property>
+        <child>
+          <!-- n-columns=1 n-rows=2 -->
+          <object class="GtkGrid" id="IO_grids">
+            <property name="name">IO</property>
+            <property name="height-request">150</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="column-homogeneous">True</property>
+            <child>
+              <object class="GtkTextView" id="Output">
+                <property name="name">Output</property>
+                <property name="height-request">100</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="vscroll-policy">natural</property>
+                <property name="editable">False</property>
+                <property name="justification">right</property>
+                <property name="top-margin">82</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">buffer_output</property>
+                <property name="input-purpose">number</property>
+                <property name="monospace">True</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_input">
+                <property name="name">Scroll_input</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="hscrollbar-policy">always</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">550</property>
+                <property name="kinetic-scrolling">False</property>
+                <property name="max-content-width">550</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="Input">
+                    <property name="name">Input</property>
+                    <property name="height-request">40</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="has-focus">True</property>
+                    <property name="can-default">True</property>
+                    <property name="has-default">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="margin-top">10</property>
+                    <property name="buffer">buffer_input</property>
+                    <property name="accepts-tab">False</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <!-- n-columns=7 n-rows=6 -->
+          <object class="GtkGrid" id="Buttons">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkButton" id="Delete">
+                <property name="label" translatable="yes">Delete</property>
+                <property name="name">Delete</property>
+                <property name="width-request">78</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_delete_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="(">
+                <property name="label" translatable="yes">(</property>
+                <property name="name">(</property>
+                <property name="width-request">78</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_sk1_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id=")">
+                <property name="label" translatable="yes">)</property>
+                <property name="name">)</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_sk2_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="7">
+                <property name="label" translatable="yes">7</property>
+                <property name="name">7</property>
+                <property name="width-request">78</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_seven_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="8">
+                <property name="label" translatable="yes">8</property>
+                <property name="name">8</property>
+                <property name="width-request">78</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_eight_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="9">
+                <property name="label" translatable="yes">9</property>
+                <property name="name">9</property>
+                <property name="width-request">78</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_nine_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="4">
+                <property name="label" translatable="yes">4</property>
+                <property name="name">4</property>
+                <property name="width-request">78</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_four_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="5">
+                <property name="label" translatable="yes">5</property>
+                <property name="name">5</property>
+                <property name="width-request">78</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_five_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="6">
+                <property name="label" translatable="yes">6</property>
+                <property name="name">6</property>
+                <property name="width-request">78</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_six_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="1">
+                <property name="label" translatable="yes">1</property>
+                <property name="name">1</property>
+                <property name="width-request">78</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_one_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="2">
+                <property name="label" translatable="yes">2</property>
+                <property name="name">2</property>
+                <property name="width-request">78</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_two_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="3">
+                <property name="label" translatable="yes">3</property>
+                <property name="name">3</property>
+                <property name="width-request">78</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_three_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="0">
+                <property name="label" translatable="yes">0</property>
+                <property name="name">0</property>
+                <property name="width-request">78</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_zero_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id=".">
+                <property name="label" translatable="yes">.</property>
+                <property name="name">.</property>
+                <property name="width-request">78</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_tochka_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="mod">
+                <property name="label" translatable="yes">mod</property>
+                <property name="name">mod</property>
+                <property name="width-request">78</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_mod_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="+">
+                <property name="label" translatable="yes">+</property>
+                <property name="name">+</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_plus_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="-">
+                <property name="label" translatable="yes">-</property>
+                <property name="name">-</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_minus_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="*">
+                <property name="label" translatable="yes">*</property>
+                <property name="name">*</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_umnoj_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="/">
+                <property name="label" translatable="yes">/</property>
+                <property name="name">/</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_del_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="^">
+                <property name="label" translatable="yes">^</property>
+                <property name="name">^</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_step_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">3</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="cos">
+                <property name="label" translatable="yes">cos</property>
+                <property name="name">cos</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_cos_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="sin">
+                <property name="label" translatable="yes">sin</property>
+                <property name="name">sin</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_sin_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="tan">
+                <property name="label" translatable="yes">tan</property>
+                <property name="name">tan</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_tan_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="ln">
+                <property name="label" translatable="yes">ln</property>
+                <property name="name">ln</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_ln_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="sqrt">
+                <property name="label" translatable="yes">sqrt</property>
+                <property name="name">sqrt</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_sqrt_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="acos">
+                <property name="label" translatable="yes">acos</property>
+                <property name="name">acos</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_acos_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="asin">
+                <property name="label" translatable="yes">asin</property>
+                <property name="name">9</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_asin_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="log">
+                <property name="label" translatable="yes">log</property>
+                <property name="name">9</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_log_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="atan">
+                <property name="label" translatable="yes">atan</property>
+                <property name="name">9</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_atan_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="graph">
+                <property name="label" translatable="yes">graph</property>
+                <property name="name">grph</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_graph_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">6</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="=">
+                <property name="label" translatable="yes">=</property>
+                <property name="name">=</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="image-position">right</property>
+                <signal name="clicked" handler="on_btn_result_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">6</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="x_grid">
+                <property name="name">x_grid</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="hscrollbar-policy">always</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">30</property>
+                <property name="kinetic-scrolling">False</property>
+                <property name="max-content-width">30</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="x_string">
+                    <property name="name">x_string</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">10</property>
+                    <property name="buffer">buffer_x</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">6</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="x_def">
+                <property name="name">x_def</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">False</property>
+                <property name="editable">False</property>
+                <property name="justification">center</property>
+                <property name="top-margin">10</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer1</property>
+                <property name="monospace">True</property>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="credit">
+                <property name="label" translatable="yes">credit</property>
+                <property name="name">Credi</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_credit_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">6</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="deposit">
+                <property name="label" translatable="yes">deposit</property>
+                <property name="name">deposit</property>
+                <property name="width-request">78</property>
+                <property name="height-request">3</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-right">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_deposit_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">6</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="Plus_mashtab">
+                <property name="label" translatable="yes">+</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_plus_mash_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">5</property>
+                <property name="width">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="Minus_mashtab">
+                <property name="label" translatable="yes">-</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="margin-left">3</property>
+                <property name="margin-start">3</property>
+                <property name="margin-end">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <signal name="clicked" handler="on_btn_minus_mash_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="left-attach">2</property>
+                <property name="top-attach">5</property>
+                <property name="width">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="Mashtab_text">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="editable">False</property>
+                <property name="left-margin">10</property>
+                <property name="top-margin">10</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer21</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">4</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="hscrollbar-policy">always</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">50</property>
+                <property name="kinetic-scrolling">False</property>
+                <property name="max-content-width">50</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="Mashtab_value">
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="editable">False</property>
+                    <property name="left-margin">32</property>
+                    <property name="top-margin">11</property>
+                    <property name="cursor-visible">False</property>
+                    <property name="buffer">buffer_mashtab</property>
+                    <property name="accepts-tab">False</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">5</property>
+                <property name="top-attach">5</property>
+                <property name="width">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="Graph">
+    <property name="name">Graph</property>
+    <property name="can-focus">False</property>
+    <property name="is-focus">True</property>
+    <property name="no-show-all">True</property>
+    <property name="title" translatable="yes">График</property>
+    <property name="resizable">False</property>
+    <property name="default-width">960</property>
+    <property name="default-height">960</property>
+    <property name="skip-taskbar-hint">True</property>
+    <property name="skip-pager-hint">True</property>
+    <property name="transient-for">Main_Window</property>
+    <property name="attached-to">graph</property>
+    <signal name="delete-event" handler="on_window4_delete_event" swapped="no"/>
+    <child>
+      <object class="GtkDrawingArea" id="Graphic">
+        <property name="name">Graphic</property>
+        <property name="visible">True</property>
+        <property name="app-paintable">True</property>
+        <property name="can-focus">False</property>
+        <property name="no-show-all">True</property>
+      </object>
+    </child>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer3">
+    <property name="text" translatable="yes">Срок кредита(мес.)</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer4">
+    <property name="text" translatable="yes">Процентная ставка(%)</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer5">
+    <property name="text" translatable="yes">Тип ежемесячных платежей</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer6">
+    <property name="text" translatable="yes">Ежемесячный платеж</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer7">
+    <property name="text" translatable="yes">Начисленные проценты        </property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer8">
+    <property name="text" translatable="yes">Долг с процентами</property>
+  </object>
+  <object class="GtkWindow" id="Credit">
+    <property name="name">Credit</property>
+    <property name="can-focus">True</property>
+    <property name="has-focus">True</property>
+    <property name="is-focus">True</property>
+    <property name="no-show-all">True</property>
+    <property name="title" translatable="yes">Credit</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="default-width">430</property>
+    <property name="default-height">340</property>
+    <property name="skip-taskbar-hint">True</property>
+    <property name="skip-pager-hint">True</property>
+    <property name="transient-for">Main_Window</property>
+    <property name="attached-to">credit</property>
+    <signal name="delete-event" handler="on_window2_delete_event" swapped="no"/>
+    <child>
+      <!-- n-columns=1 n-rows=3 -->
+      <object class="GtkGrid" id="all_credit">
+        <property name="name">all_credit</property>
+        <property name="visible">True</property>
+        <property name="app-paintable">True</property>
+        <property name="can-focus">False</property>
+        <property name="no-show-all">True</property>
+        <property name="margin-start">20</property>
+        <property name="margin-end">20</property>
+        <property name="margin-top">10</property>
+        <property name="margin-bottom">10</property>
+        <child>
+          <!-- n-columns=2 n-rows=5 -->
+          <object class="GtkGrid" id="Input_credit">
+            <property name="name">Input_credit</property>
+            <property name="visible">True</property>
+            <property name="app-paintable">True</property>
+            <property name="can-focus">False</property>
+            <property name="no-show-all">True</property>
+            <property name="row-homogeneous">True</property>
+            <property name="column-homogeneous">True</property>
+            <child>
+              <object class="GtkTextView" id="Sum_credit">
+                <property name="name">Sum_credit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="has-focus">True</property>
+                <property name="is-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="editable">False</property>
+                <property name="top-margin">5</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer2</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="Srok_credit">
+                <property name="name">Srok_credit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="tooltip-text" translatable="yes">
+</property>
+                <property name="editable">False</property>
+                <property name="top-margin">5</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer3</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="Procent_credit">
+                <property name="name">Procent_credit</property>
+                <property name="width-request">0</property>
+                <property name="height-request">32</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="editable">False</property>
+                <property name="top-margin">6</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer4</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="Type_credit">
+                <property name="name">Type_credit</property>
+                <property name="width-request">0</property>
+                <property name="height-request">32</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="editable">False</property>
+                <property name="top-margin">21</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer5</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">3</property>
+                <property name="height">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_sum_credit">
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">150</property>
+                <property name="max-content-width">150</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="sum_credit">
+                    <property name="name">sum_credit</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">5</property>
+                    <property name="bottom-margin">5</property>
+                    <property name="buffer">buffer_sum_credit</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_srok_credit">
+                <property name="name">Scroll_srok_credit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">150</property>
+                <property name="max-content-width">150</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="srok_credit">
+                    <property name="name">srok_credit</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="can-default">True</property>
+                    <property name="has-default">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">5</property>
+                    <property name="bottom-margin">5</property>
+                    <property name="buffer">buffer_srok_credit</property>
+                    <property name="accepts-tab">False</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_procent_credit">
+                <property name="name">Scroll_procent_credit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">150</property>
+                <property name="max-content-width">150</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="proc_credit">
+                    <property name="name">proc_credit</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="can-default">True</property>
+                    <property name="has-default">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">5</property>
+                    <property name="bottom-margin">5</property>
+                    <property name="buffer">buffer_procent_credit</property>
+                    <property name="accepts-tab">False</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkRadioButton" id="Anuitet">
+                <property name="label" translatable="yes">Ануитетные</property>
+                <property name="name">Anuitet</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">False</property>
+                <property name="tooltip-text" translatable="yes">Вариант ежемесячного платежа по кредиту, когда размер ежемесячного платежа остается постоянным на всем периоде кредитования</property>
+                <property name="margin-start">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="active">True</property>
+                <property name="draw-indicator">True</property>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkRadioButton" id="Diff">
+                <property name="label" translatable="yes">Дифференцированные</property>
+                <property name="name">Дифф</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">False</property>
+                <property name="tooltip-text" translatable="yes">Вариант ежемесячного платежа по кредиту, когда размер размер ежемесячного платежа по погашению кредита постепенно уменьшается к концу периода кредитования</property>
+                <property name="margin-start">3</property>
+                <property name="margin-top">3</property>
+                <property name="margin-bottom">3</property>
+                <property name="active">True</property>
+                <property name="draw-indicator">True</property>
+                <property name="group">Anuitet</property>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="Calculation_credit">
+            <property name="label" translatable="yes">Рассчитать</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="no-show-all">True</property>
+            <signal name="clicked" handler="on_btn_res_credit_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <!-- n-columns=2 n-rows=3 -->
+          <object class="GtkGrid" id="Output_credit">
+            <property name="name">Output_credit</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="no-show-all">True</property>
+            <child>
+              <object class="GtkTextView" id="Plata_month_credit">
+                <property name="name">Plata_month_credit</property>
+                <property name="height-request">40</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="editable">False</property>
+                <property name="top-margin">9</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer6</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="Pereplata_credit">
+                <property name="name">Pereplata_credit</property>
+                <property name="height-request">40</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="editable">False</property>
+                <property name="top-margin">9</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer7</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="Dolg_credit">
+                <property name="name">Dolg_credit</property>
+                <property name="height-request">40</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="editable">False</property>
+                <property name="top-margin">9</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer8</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_month_credit">
+                <property name="name">Scroll_month_credit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">192</property>
+                <property name="max-content-width">192</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="plata_month_credit">
+                    <property name="name">plata_month_credit</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="editable">False</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">5</property>
+                    <property name="bottom-margin">5</property>
+                    <property name="cursor-visible">False</property>
+                    <property name="buffer">buffer_month_credit</property>
+                    <property name="accepts-tab">False</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_pereplata_credit">
+                <property name="name">Scroll_pereplata_credit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">150</property>
+                <property name="max-content-width">150</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="pereplata_credit">
+                    <property name="name">pereplata_credit</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="editable">False</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">5</property>
+                    <property name="bottom-margin">5</property>
+                    <property name="cursor-visible">False</property>
+                    <property name="buffer">buffer_pereplata_credit</property>
+                    <property name="accepts-tab">False</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_dolg_credit">
+                <property name="name">Scroll_dolg_credit3</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">150</property>
+                <property name="max-content-width">150</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="dolg_credit">
+                    <property name="name">dolg_credit</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="editable">False</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">5</property>
+                    <property name="bottom-margin">5</property>
+                    <property name="cursor-visible">False</property>
+                    <property name="buffer">buffer_dolg_credit</property>
+                    <property name="accepts-tab">False</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer9">
+    <property name="text" translatable="yes">Сумма вклада</property>
+  </object>
+  <object class="GtkWindow" id="Deposit">
+    <property name="name">Deposit</property>
+    <property name="can-focus">True</property>
+    <property name="has-focus">True</property>
+    <property name="is-focus">True</property>
+    <property name="no-show-all">True</property>
+    <property name="title" translatable="yes">Deposit</property>
+    <property name="resizable">False</property>
+    <property name="modal">True</property>
+    <property name="default-width">620</property>
+    <property name="default-height">500</property>
+    <property name="skip-taskbar-hint">True</property>
+    <property name="skip-pager-hint">True</property>
+    <property name="transient-for">Main_Window</property>
+    <property name="attached-to">deposit</property>
+    <signal name="delete-event" handler="on_window3_delete_event" swapped="no"/>
+    <child>
+      <!-- n-columns=1 n-rows=3 -->
+      <object class="GtkGrid" id="all_deposit">
+        <property name="name">all_deposit</property>
+        <property name="visible">True</property>
+        <property name="app-paintable">True</property>
+        <property name="can-focus">False</property>
+        <property name="no-show-all">True</property>
+        <property name="margin-start">20</property>
+        <property name="margin-end">20</property>
+        <property name="margin-top">10</property>
+        <property name="margin-bottom">10</property>
+        <child>
+          <object class="GtkButton" id="Calculaction_deposit">
+            <property name="label" translatable="yes">Рассчитать</property>
+            <property name="name">Calculation_deposit</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <property name="no-show-all">True</property>
+            <signal name="clicked" handler="on_btn_res_deposit_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <!-- n-columns=2 n-rows=9 -->
+          <object class="GtkGrid" id="Input_deposit">
+            <property name="visible">True</property>
+            <property name="app-paintable">True</property>
+            <property name="can-focus">False</property>
+            <property name="no-show-all">True</property>
+            <property name="row-homogeneous">True</property>
+            <child>
+              <object class="GtkTextView" id="Sum_deposit">
+                <property name="name">Sum_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="editable">False</property>
+                <property name="top-margin">10</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer9</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="Srok_deposit">
+                <property name="name">Srok_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="editable">False</property>
+                <property name="top-margin">10</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer14</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_sum_deposit">
+                <property name="name">Scroll_sum_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">150</property>
+                <property name="max-content-width">150</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="sum_deposit">
+                    <property name="name">sum_deposit</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">10</property>
+                    <property name="bottom-margin">5</property>
+                    <property name="buffer">buffer_sum_deposit</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_srok_deposit">
+                <property name="name">Scroll_srok_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">150</property>
+                <property name="max-content-width">150</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="srok_deposit">
+                    <property name="name">srok_deposit</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">10</property>
+                    <property name="buffer">buffer_srok_deposit</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <!-- n-columns=1 n-rows=1 -->
+              <object class="GtkGrid" id="popolneniya">
+                <property name="name">popolneniya</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">False</property>
+                <property name="no-show-all">True</property>
+                <property name="row-homogeneous">True</property>
+                <property name="column-homogeneous">True</property>
+                <child>
+                  <!-- n-columns=1 n-rows=2 -->
+                  <object class="GtkGrid" id="Kapital">
+                    <property name="name">Kapital</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkRadioButton" id="yes_deposit">
+                        <property name="label" translatable="yes">Да</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">False</property>
+                        <property name="active">True</property>
+                        <property name="draw-indicator">True</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkRadioButton" id="no_deposit">
+                        <property name="label" translatable="yes">Нет</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">False</property>
+                        <property name="active">True</property>
+                        <property name="draw-indicator">True</property>
+                        <property name="group">yes_deposit</property>
+                      </object>
+                      <packing>
+                        <property name="left-attach">0</property>
+                        <property name="top-attach">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left-attach">0</property>
+                    <property name="top-attach">0</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <!-- n-columns=3 n-rows=1 -->
+              <object class="GtkGrid" id="snyatiya">
+                <property name="name">snyatiya</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">False</property>
+                <property name="no-show-all">True</property>
+                <property name="row-homogeneous">True</property>
+                <property name="column-homogeneous">True</property>
+                <child>
+                  <object class="GtkComboBoxText" id="combotext1">
+                    <property name="name">combotext1</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="active">0</property>
+                    <property name="active-id">0</property>
+                    <items>
+                      <item id="1" translatable="yes">Разовое</item>
+                      <item id="2" translatable="yes">Раз в месяц</item>
+                      <item id="3" translatable="yes">Раз в 2 месяца</item>
+                      <item id="4" translatable="yes">Раз в квартал</item>
+                      <item id="5" translatable="yes">Раз в полгода</item>
+                      <item id="6" translatable="yes">Раз в год</item>
+                      <item id="0" translatable="yes">Нет</item>
+                    </items>
+                  </object>
+                  <packing>
+                    <property name="left-attach">0</property>
+                    <property name="top-attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkScrolledWindow" id="popol_pered_mes">
+                    <property name="name">popol_pered_mes</property>
+                    <property name="visible">True</property>
+                    <property name="app-paintable">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="vscrollbar-policy">never</property>
+                    <property name="shadow-type">in</property>
+                    <property name="min-content-width">150</property>
+                    <property name="max-content-width">150</property>
+                    <property name="propagate-natural-width">True</property>
+                    <property name="propagate-natural-height">True</property>
+                    <child>
+                      <object class="GtkTextView" id="popol_mes_txt">
+                        <property name="name">popol_mes_txt</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="no-show-all">True</property>
+                        <property name="justification">center</property>
+                        <property name="top-margin">10</property>
+                        <property name="buffer">buffer_popol_mes</property>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left-attach">1</property>
+                    <property name="top-attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkScrolledWindow" id="suma_popol">
+                    <property name="name">suma_popol</property>
+                    <property name="visible">True</property>
+                    <property name="app-paintable">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="vscrollbar-policy">never</property>
+                    <property name="shadow-type">in</property>
+                    <property name="min-content-width">150</property>
+                    <property name="max-content-width">150</property>
+                    <property name="propagate-natural-width">True</property>
+                    <property name="propagate-natural-height">True</property>
+                    <child>
+                      <object class="GtkTextView" id="suma_popol_txt">
+                        <property name="name">suma_popol_txt</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="no-show-all">True</property>
+                        <property name="justification">center</property>
+                        <property name="top-margin">10</property>
+                        <property name="buffer">buffer_sum_popol</property>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left-attach">2</property>
+                    <property name="top-attach">0</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <!-- n-columns=3 n-rows=1 -->
+              <object class="GtkGrid">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="row-homogeneous">True</property>
+                <property name="column-homogeneous">True</property>
+                <child>
+                  <object class="GtkComboBoxText" id="combotext2">
+                    <property name="name">combotext2</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="no-show-all">True</property>
+                    <property name="active">0</property>
+                    <property name="active-id">0</property>
+                    <items>
+                      <item id="1" translatable="yes">Разовое</item>
+                      <item id="2" translatable="yes">Раз в месяц</item>
+                      <item id="3" translatable="yes">Раз в 2 месяца</item>
+                      <item id="4" translatable="yes">Раз в квартал</item>
+                      <item id="5" translatable="yes">Раз в полгода</item>
+                      <item id="6" translatable="yes">Раз в год</item>
+                      <item id="0" translatable="yes">Нет</item>
+                    </items>
+                  </object>
+                  <packing>
+                    <property name="left-attach">0</property>
+                    <property name="top-attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkScrolledWindow" id="popol_snyatiya_mes">
+                    <property name="name">popol_pered_mes</property>
+                    <property name="visible">True</property>
+                    <property name="app-paintable">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="vscrollbar-policy">never</property>
+                    <property name="shadow-type">in</property>
+                    <property name="min-content-width">150</property>
+                    <property name="max-content-width">150</property>
+                    <property name="propagate-natural-width">True</property>
+                    <property name="propagate-natural-height">True</property>
+                    <child>
+                      <object class="GtkTextView" id="popol_snyatiya_mes_txt">
+                        <property name="name">popol_mes_txt</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="no-show-all">True</property>
+                        <property name="justification">center</property>
+                        <property name="top-margin">10</property>
+                        <property name="buffer">buffer_snyatiya_mes</property>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left-attach">1</property>
+                    <property name="top-attach">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkScrolledWindow" id="suma_snyatiya">
+                    <property name="name">suma_popol</property>
+                    <property name="visible">True</property>
+                    <property name="app-paintable">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="vscrollbar-policy">never</property>
+                    <property name="shadow-type">in</property>
+                    <property name="min-content-width">150</property>
+                    <property name="max-content-width">150</property>
+                    <property name="propagate-natural-width">True</property>
+                    <property name="propagate-natural-height">True</property>
+                    <child>
+                      <object class="GtkTextView" id="suma_snyatiya_txt">
+                        <property name="name">suma_popol_txt</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="no-show-all">True</property>
+                        <property name="justification">center</property>
+                        <property name="top-margin">10</property>
+                        <property name="buffer">buffer_snyatiya_sum</property>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left-attach">2</property>
+                    <property name="top-attach">0</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">8</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="Chast_deposit">
+                <property name="name">Chast_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="tooltip-text" translatable="yes">Первый столбик - период снятия, второй - дата начала снятия формат ввода ДД.ММ.ГГ, третий - сумма снятия</property>
+                <property name="editable">False</property>
+                <property name="top-margin">10</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer16</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">8</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="Popol_deposit">
+                <property name="name">Popol_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="tooltip-text" translatable="yes">Первый столбик - период пополнения, второй - дата начала пополнения формат ввода ДД.ММ.ГГ, третий - сумма пополнения</property>
+                <property name="editable">False</property>
+                <property name="top-margin">10</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer15</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="Kapital_deposit">
+                <property name="name">Kapital_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="tooltip-text" translatable="yes">Свойство вклада, при котором начисленные проценты не отдаются на руки держателю, а прибавляются к вкладу</property>
+                <property name="editable">False</property>
+                <property name="top-margin">10</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer11</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkComboBoxText" id="combotext3">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="active">0</property>
+                <items>
+                  <item id="1" translatable="yes">раз в месяц</item>
+                  <item id="2" translatable="yes">раз в квартал</item>
+                  <item id="3" translatable="yes">раз в полгода</item>
+                  <item id="4" translatable="yes">раз в год</item>
+                  <item id="5" translatable="yes">в конце срока</item>
+                </items>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="Period_deposit">
+                <property name="name">Period_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="editable">False</property>
+                <property name="top-margin">10</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer12</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">5</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="Nalog_deposit">
+                <property name="name">Nalog_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="tooltip-text" translatable="yes">Налог платится один раз в год за все вклады. Доход необлагаемый налогом рассчитывается (1000000*Процентная ставка). Налог рассчитывается только с доходов.</property>
+                <property name="editable">False</property>
+                <property name="top-margin">10</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer13</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_nalog_deposit">
+                <property name="name">Scroll_nalog_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">150</property>
+                <property name="max-content-width">150</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="nalog_deposit">
+                    <property name="name">nalog_deposit</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">10</property>
+                    <property name="buffer">buffer_nalog_deposit</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="Proc_deposit">
+                <property name="name">Proc_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="tooltip-text" translatable="yes">Фиксированная процентная ставка. Годовые проценты</property>
+                <property name="editable">False</property>
+                <property name="top-margin">10</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer10</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_proc_deposit">
+                <property name="name">Scroll_proc_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">150</property>
+                <property name="max-content-width">150</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="proc_deposit">
+                    <property name="name">proc_deposit</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">10</property>
+                    <property name="bottom-margin">5</property>
+                    <property name="buffer">buffer_proc_deposit</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="Date_begin">
+                <property name="name">Date_begin</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="tooltip-text" translatable="yes">Формат ввода ДД.ММ.ГГ</property>
+                <property name="editable">False</property>
+                <property name="top-margin">10</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer20</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_proc_deposit1">
+                <property name="name">Scroll_date_begin</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">150</property>
+                <property name="max-content-width">150</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="date_begin">
+                    <property name="name">date_begin</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">10</property>
+                    <property name="bottom-margin">5</property>
+                    <property name="buffer">buffer_date_begin</property>
+                    <property name="input-purpose">digits</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <!-- n-columns=2 n-rows=3 -->
+          <object class="GtkGrid" id="Output_deposit">
+            <property name="visible">True</property>
+            <property name="app-paintable">True</property>
+            <property name="can-focus">False</property>
+            <property name="no-show-all">True</property>
+            <child>
+              <object class="GtkTextView" id="itog_proc">
+                <property name="name">itog_proc</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="editable">False</property>
+                <property name="top-margin">5</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer17</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="sum_nalog">
+                <property name="name">sum_nalog</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="editable">False</property>
+                <property name="top-margin">5</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer18</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkTextView" id="result_deposit">
+                <property name="name">result_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="editable">False</property>
+                <property name="top-margin">5</property>
+                <property name="cursor-visible">False</property>
+                <property name="buffer">textbuffer19</property>
+                <property name="accepts-tab">False</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_sum_proc_deposit">
+                <property name="name">Scroll_sum_proc_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">454</property>
+                <property name="max-content-width">454</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="sum_proc_deposit">
+                    <property name="name">sum_proc_deposit</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="editable">False</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">5</property>
+                    <property name="bottom-margin">5</property>
+                    <property name="cursor-visible">False</property>
+                    <property name="buffer">buffer_nachisl_proc_deposit</property>
+                    <property name="accepts-tab">False</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_sum_nalog_deposit">
+                <property name="name">Scroll_sum_nalog_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">454</property>
+                <property name="max-content-width">454</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="sum_nalog_deposit">
+                    <property name="name">sum_nalog_deposit</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="editable">False</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">5</property>
+                    <property name="bottom-margin">5</property>
+                    <property name="cursor-visible">False</property>
+                    <property name="buffer">buffer_sum_nalog_deposit</property>
+                    <property name="accepts-tab">False</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkScrolledWindow" id="Scroll_result_deposit">
+                <property name="name">Scroll_result_deposit</property>
+                <property name="visible">True</property>
+                <property name="app-paintable">True</property>
+                <property name="can-focus">True</property>
+                <property name="no-show-all">True</property>
+                <property name="vscrollbar-policy">never</property>
+                <property name="shadow-type">in</property>
+                <property name="min-content-width">454</property>
+                <property name="max-content-width">454</property>
+                <property name="propagate-natural-width">True</property>
+                <property name="propagate-natural-height">True</property>
+                <child>
+                  <object class="GtkTextView" id="sum_result_deposit">
+                    <property name="name">sum_result_deposit</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="no-show-all">True</property>
+                    <property name="editable">False</property>
+                    <property name="justification">center</property>
+                    <property name="top-margin">5</property>
+                    <property name="bottom-margin">5</property>
+                    <property name="cursor-visible">False</property>
+                    <property name="buffer">buffer_sum_result_deposit</property>
+                    <property name="accepts-tab">False</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="left-attach">1</property>
+                <property name="top-attach">2</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">0</property>
+            <property name="top-attach">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
