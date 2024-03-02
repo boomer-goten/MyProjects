@@ -1,0 +1,3 @@
+run server
+
+./candy-server-server --tls-host candy.tld --tls-port 3333 --tls-certificate ../../candy.tld/cert.pem --tls-key ../../candy.tld/key.pem tls-ca ../../minica.pem
