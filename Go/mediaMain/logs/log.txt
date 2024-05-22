@@ -1,0 +1,196 @@
+time=2024-05-22T23:39:26.302+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-22T23:39:26.302+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-22T23:40:03.161+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-22T23:40:04.206+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-22T23:40:04.206+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-22T23:40:23.624+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=16.16µs
+time=2024-05-22T23:41:49.968+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-22T23:41:50.878+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-22T23:41:50.878+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-22T23:41:54.407+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=29.325µs
+time=2024-05-22T23:42:04.921+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-22T23:42:06.552+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-22T23:42:06.552+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-22T23:42:08.787+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=25.949µs
+time=2024-05-22T23:42:15.662+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-22T23:42:16.646+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-22T23:42:16.646+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-22T23:42:18.563+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=35.146µs
+time=2024-05-22T23:43:44.511+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-22T23:43:45.243+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-22T23:43:45.243+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-22T23:43:47.555+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=40.015µs
+time=2024-05-22T23:45:56.338+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-22T23:45:57.292+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-22T23:45:57.292+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-22T23:45:59.416+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=33.443µs
+time=2024-05-22T23:46:05.992+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-22T23:46:23.273+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-22T23:46:23.273+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-22T23:46:25.264+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=400 elapsed_time=64.482µs
+time=2024-05-22T23:50:15.946+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-22T23:50:16.637+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-22T23:50:16.637+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-22T23:50:18.385+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=400 elapsed_time=41.318µs
+time=2024-05-22T23:51:22.073+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-22T23:51:23.125+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-22T23:51:23.125+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-22T23:51:25.493+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=400 elapsed_time=16.121µs
+time=2024-05-22T23:51:28.603+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:28:45.214+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:28:45.214+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:28:47.177+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=400 elapsed_time=22.683µs
+time=2024-05-23T00:32:40.582+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=2.503911ms
+time=2024-05-23T00:34:14.654+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:34:15.931+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:34:15.931+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:34:17.951+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=717.264µs
+time=2024-05-23T00:41:28.788+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:41:29.804+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:41:29.804+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:41:32.118+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=766.064µs
+time=2024-05-23T00:45:33.745+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:46:04.248+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:46:04.248+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:46:06.870+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=171.292µs
+time=2024-05-23T00:46:20.678+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:46:21.410+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:46:21.410+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:46:23.504+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=116.299µs
+time=2024-05-23T00:46:42.388+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:46:43.130+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:46:43.130+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:46:45.278+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=620.167µs
+time=2024-05-23T00:47:14.844+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:47:15.571+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:47:15.571+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:47:27.009+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=774.688µs
+time=2024-05-23T00:47:28.938+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:47:29.965+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:47:29.965+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:47:32.202+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=798.253µs
+time=2024-05-23T00:47:56.455+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:47:57.952+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:47:57.952+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:47:59.915+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=2.195586ms
+time=2024-05-23T00:48:11.785+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:48:59.348+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:48:59.348+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:49:01.028+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=1.996853ms
+time=2024-05-23T00:49:08.541+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:49:09.433+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:49:09.433+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:49:11.164+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=804.206µs
+time=2024-05-23T00:50:46.170+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:50:47.041+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:50:47.041+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:50:49.694+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=107.393µs
+time=2024-05-23T00:51:37.888+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:51:38.827+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:51:38.828+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:51:41.933+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=2.091748ms
+time=2024-05-23T00:53:54.575+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:53:55.319+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:53:55.319+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:53:58.477+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=87.626µs
+time=2024-05-23T00:54:59.556+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:55:00.554+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:55:00.554+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:55:03.432+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=207.482µs
+time=2024-05-23T00:55:23.249+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:55:23.993+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:55:23.993+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:55:26.353+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=215.928µs
+time=2024-05-23T00:55:58.037+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:55:58.978+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:55:58.979+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:56:01.116+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=201.942µs
+time=2024-05-23T00:56:54.765+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:56:55.795+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:56:55.795+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:56:58.421+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=231.898µs
+time=2024-05-23T00:57:35.109+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:57:36.062+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:57:36.062+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:57:38.195+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=171.203µs
+time=2024-05-23T00:58:20.838+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T00:58:21.930+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T00:58:21.930+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T00:58:24.360+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=175.833µs
+time=2024-05-23T01:01:16.672+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:01:17.839+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:01:17.839+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:01:20.804+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=198.125µs
+time=2024-05-23T01:02:20.240+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:02:21.243+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:02:21.243+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:02:23.916+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=177.786µs
+time=2024-05-23T01:02:55.200+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:02:56.188+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:02:56.188+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:02:58.455+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=185.952µs
+time=2024-05-23T01:03:58.437+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:03:59.523+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:03:59.523+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:04:02.148+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=191.462µs
+time=2024-05-23T01:04:49.546+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:04:50.324+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:04:50.324+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:04:52.658+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=118.764µs
+time=2024-05-23T01:04:57.180+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:04:57.852+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:04:57.852+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:04:59.871+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=196.162µs
+time=2024-05-23T01:05:16.331+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:05:17.234+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:05:17.234+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:05:19.802+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=227.491µs
+time=2024-05-23T01:06:08.958+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:06:09.804+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:06:09.804+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:06:12.127+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=170.563µs
+time=2024-05-23T01:07:09.280+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:07:10.139+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:07:10.139+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:07:12.479+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=194.438µs
+time=2024-05-23T01:15:18.637+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:15:19.515+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:15:19.515+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:15:21.879+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=192.984µs
+time=2024-05-23T01:16:18.180+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:16:19.051+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:16:19.051+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:16:22.273+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=263.186µs
+time=2024-05-23T01:16:39.282+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:16:40.290+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:16:40.290+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:16:43.869+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=265.12µs
+time=2024-05-23T01:16:52.204+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:16:52.979+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:16:52.979+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:16:55.425+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=256.504µs
+time=2024-05-23T01:17:08.470+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:17:09.267+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:17:09.267+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:17:11.913+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=253.899µs
+time=2024-05-23T01:17:59.738+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:18:00.613+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:18:00.613+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:18:03.247+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=171.894µs
+time=2024-05-23T01:18:09.570+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:18:10.543+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:18:10.543+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:18:13.670+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=206.209µs
+time=2024-05-23T01:18:28.986+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:18:31.170+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:18:31.170+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:18:33.398+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=197.553µs
+time=2024-05-23T01:18:47.277+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:18:48.180+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:18:48.180+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:18:51.179+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=164.3µs
+time=2024-05-23T01:19:13.537+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
+time=2024-05-23T01:31:17.656+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-23T01:31:17.656+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-23T01:31:19.829+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=184.128µs
+time=2024-05-23T01:33:23.621+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=110.659µs
