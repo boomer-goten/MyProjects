@@ -1,4 +1,4 @@
-# Go API Server Banner-service
+# Go API Server exchange-service
 
 ## Конфигурация
 
