@@ -194,3 +194,7 @@ time=2024-05-23T01:31:17.656+03:00 level=INFO msg="logger middleware enabled"
 time=2024-05-23T01:31:17.656+03:00 level=INFO msg="Running http server" address=localhost:8080
 time=2024-05-23T01:31:19.829+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=184.128µs
 time=2024-05-23T01:33:23.621+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=110.659µs
+time=2024-05-24T17:01:48.116+03:00 level=INFO msg="logger middleware enabled"
+time=2024-05-24T17:01:48.116+03:00 level=INFO msg="Running http server" address=localhost:8080
+time=2024-05-24T17:02:05.902+03:00 level=INFO msg="Request status" Path=/exchange Method=GET status_code=200 elapsed_time=128.719µs
+time=2024-05-24T17:02:48.891+03:00 level=INFO msg="Gracefull stopping server" address=localhost:8080
