@@ -1,0 +1,88 @@
+type RegistrResponse {
+    response: String!
+}
+
+type AuthResponse {
+    token: String!
+    userID: ID!
+}
+
+type User {
+    id: ID!
+    name: String!
+    password: String!
+}
+
+type Post {
+    id: ID!
+    userName: String!
+    title: String!
+    content: String!
+    allowComments: Boolean!
+    comments: [Comment!]
+}
+
+type Comment {
+    id: ID!
+    postID: ID!
+    parentCommentID: ID
+    userName: String!
+    text: String!
+    depth: Int!
+    childComments: [Comment!]
+}
+
+type PageInfo {
+    startCursor: ID!
+    endCursor: ID!
+    hasNextPage: Boolean!
+}
+
+type CommentsConnection {
+    post: Post
+    pageInfo: PageInfo!
+}
+
+input NewPost {
+    title: String!
+    content: String!
+    allowComments: Boolean = true
+}
+
+input NewComment {
+    postID: ID!
+    parentCommentID: ID = 0
+    text: String!
+}
+
+input ChangeAccessComments {
+    postID: ID!
+    allowComments: Boolean!
+}
+
+input CommentPost {
+    postID: ID!
+    depth: Int = -1
+}
+
+input LoginRegister {
+    name: String!
+    password: String!
+}
+
+type Query {
+    posts: [Post!]!
+    post(input: CommentPost, limit: Int, offset: Int): CommentsConnection
+}
+
+type Mutation {
+    register(input: LoginRegister!): RegistrResponse!
+    login(input: LoginRegister!): AuthResponse!
+    createPost(input: NewPost!): Post!
+    createComment(input: NewComment): Comment
+    accessComments(input: ChangeAccessComments): Post!
+}
+
+type Subscription {
+    newComment(postID: ID!): Comment!
+}
