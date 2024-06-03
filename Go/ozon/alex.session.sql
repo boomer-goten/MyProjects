@@ -1,7 +1,0 @@
-DROP TABLE users CASCADE;
-DROP TABLE comments CASCADE;
-DROP TABLE posts CASCADE;
-ALTER TABLE posts
-ADD CONSTRAINT fk_name FOREIGN KEY (user_id) REFERENCES users(id);
-ALTER TABLE posts
-ADD CONSTRAINT fk_name FOREIGN KEY (user_name) REFERENCES users(name);
